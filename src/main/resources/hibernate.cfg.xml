@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/authorization</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.ims.model.GroupEntity"/>
+    <mapping class="com.ims.model.GroupRoleEntity"/>
+    <mapping class="com.ims.model.ItemEntity"/>
+    <mapping class="com.ims.model.MenuEntity"/>
+    <mapping class="com.ims.model.OperationEntity"/>
+    <mapping class="com.ims.model.OrganizationEntity"/>
+    <mapping class="com.ims.model.PermissionsEntity"/>
+    <mapping class="com.ims.model.PermissionsItemEntity"/>
+    <mapping class="com.ims.model.PermissionsMenuEntity"/>
+    <mapping class="com.ims.model.PermissionsOperationEntity"/>
+    <mapping class="com.ims.model.ProjectEntity"/>
+    <mapping class="com.ims.model.ProjectPermissionsEntity"/>
+    <mapping class="com.ims.model.RoleEntity"/>
+    <mapping class="com.ims.model.RoleProjectEntity"/>
+    <mapping class="com.ims.model.UserEntity"/>
+    <mapping class="com.ims.model.UserGroupEntity"/>
+    <mapping class="com.ims.model.UserRoleEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

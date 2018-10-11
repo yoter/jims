@@ -1,0 +1,14 @@
+server:
+  servlet:
+    context-path: /ims
+  port: 2000
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/authorization?characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database: mysql
